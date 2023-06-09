@@ -5,33 +5,30 @@ import background from '../../assets/App.jpeg'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
-const Login = () => {
+const Signup = () => {
   return (
     <ImageBackground source={background} style={styles.background}>
     <SafeAreaView style={styles.container}>
     <Text style={styles.header}>
-      Login
+      Sign Up
     </Text>
     <View>
       <Input label="NAME" placeholder="name"  />
       <Input label="PASSWORD" placeholder="password" style={styles.passwordInput} />
       <View style={styles.loginButtonContainer}>
-        <Button text='login' style={styles.loginButton} />
-        <TouchableOpacity>
-          <Text style={styles.forgetText}>Forgot Password?</Text>
-        </TouchableOpacity>
+        <Button text='Sign Up' style={styles.loginButton} />
       </View>
     </View>
 
     <View>
-      <Text style={styles.newAcctext}>Create a New Account</Text>
+      <Text style={styles.newAcctext}>I Already have an Account</Text>
     </View>
     </SafeAreaView>
   </ImageBackground>
   )
 }
 
-export default Login
+export default Signup
 
 const styles = StyleSheet.create({
   background :{
