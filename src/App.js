@@ -1,11 +1,15 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
-import {StyleSheet} from 'react-native'
-import Login from './screens/Login'
-import Signup from './screens/Signup'
+import { StatusBar, View } from 'react-native'
+import StackNavigator from './routes/StackNavigator'
 
 function App() {
   return (
-      <Signup />
+    <>
+      <NavigationContainer>
+        <StackNavigator />
+      </NavigationContainer>
+    </>
   )
 }
 
