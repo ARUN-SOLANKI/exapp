@@ -17,8 +17,6 @@ function TopTabNavigator() {
       tabBarInactiveTintColor : '#ccc',
       tabBarIndicatorStyle : {backgroundColor:'#fff',},
     }}
-  
-
     >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="camera" component={Camera} />
